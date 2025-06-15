@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Вход - EnglishWorld</title>
+</head>
+<body class="page">
+    <div class="auth-page">
+        <div class="auth-page__content">
+            <div class="auth-form" id="auth-form">
+                <div class="auth-form__login active" id="login-form">
+                    <h2 class="auth-form__title">Вход</h2>
+                    <div class="error-message"></div>
+                    <form>
+                        <input type="email" placeholder="Email" class="auth-form__input" required>
+                        <input type="password" placeholder="Пароль" class="auth-form__input" required>
+                        <button type="submit" class="auth-form__btn">Войти</button>
+                    </form>
+                    <button class="auth-form__toggle" id="to-register">Зарегистрироваться</button>
+                </div>
+                <div class="auth-form__register" id="register-form">
+                    <h2 class="auth-form__title">Регистрация</h2>
+                    <div class="error-message"></div>
+                    <form>
+                        <input type="email" placeholder="Email" class="auth-form__input" required>
+                        <input type="password" placeholder="Пароль" class="auth-form__input" required>
+                        <button type="submit" class="auth-form__btn">Зарегистрироваться</button>
+                    </form>
+                    <button class="auth-form__toggle" id="to-login">Войти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="level-modal" id="level-modal">
+        <div class="level-modal__content">
+            <h2 class="level-modal__title">Выберите ваш уровень</h2>
+            <div class="level-modal__options">
+                <button class="level-modal__btn" data-level="beginner">Beginner</button>
+                <button class="level-modal__btn" data-level="intermediate">Intermediate</button>
+                <button class="level-modal__btn" data-level="advanced">Advanced</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/auth.js"></script>
+</body>
+</html>
